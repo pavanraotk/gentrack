@@ -4,6 +4,7 @@ This project has the following components:
 1. Spring boot application
 2. Cloudformation for s3 bucket, RDS and to deploy the spring-boot application on the AWS.
 3. Currently, have only one integration test, MeterIT that adds a meter, adds a meter reading and gets a meter. 
+4. Have used flyway migration for creating schema, tables. 
 
 ## Pre requisites:
 
