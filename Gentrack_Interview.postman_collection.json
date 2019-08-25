@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "01a5d6e6-0449-4760-a734-03ea27b7b321",
+		"name": "Gentrack Interview",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add Meter",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"meterId\": \"2b68d7f8-c734-11e9-aa8c-2a2ae2dbcce4\",\n\t\"meterReading\": \"1.0\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/meter/addMeter/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"meter",
+						"addMeter",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Meter",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://172.31.22.55:8080/getMeter?meterId=2b68d7f8-c734-11e9-aa8c-2a2ae2dbcce4",
+					"protocol": "http",
+					"host": [
+						"172",
+						"31",
+						"22",
+						"55"
+					],
+					"port": "8080",
+					"path": [
+						"getMeter"
+					],
+					"query": [
+						{
+							"key": "meterId",
+							"value": "2b68d7f8-c734-11e9-aa8c-2a2ae2dbcce4"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
